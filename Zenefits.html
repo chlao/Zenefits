@@ -1,0 +1,35 @@
+<!doctype html> 
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Zenefits - Query</title>
+        <meta name="description" content="Zenefits Web Application">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300%7CRaleway' rel='stylesheet' type='text/css'>
+        <link href="Zenefits.css" rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div id="container" style="height:75px;">
+			<p id="errorMsg"></p>
+			<form id="searchquery" onsubmit="submitQuery(event);">
+				<img src="map35.png" id="icon" alt="maplogo">
+				<div id="inputform">
+					<h1>Look for places around you or anywhere else.</h1>
+					<input type="text" name="query" placeholder="pizza in New York" autofocus> 
+					<input type="submit"> 
+				</div>
+			</form>
+
+			<div id="scrollable">
+				<div id="resultsList"></div>
+			</div>
+		</div>
+		<div id="googleMap"></div>
+		
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI3I4eGsJjSpnBhbhOk_tCERIyEs3wb2Y&libraries=places"></script>
+		<script type="text/javascript" src="masonry.pkgd.min.js"></script>
+        <script type="text/javascript" src="Zenefits.js"></script>
+	</body>
+</html>
